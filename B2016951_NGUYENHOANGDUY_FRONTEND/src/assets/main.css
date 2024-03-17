@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/* * NAVBAR */
+.navbar {
+    .container {
+        max-width: 1400px;
+    }
+}
+.brand-title {
+    font-size: 1.8rem !important;
+}
+nav {
+    background-color: #dc0021;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar {
+    .navbar-brand,
+    .nav-link {
+        /* font-weight: bold; */
+        color: #fff !important;
+        font-size: 1.3rem;
+    }
+    .nav-link:hover {
+        color: #bbbbbb !important;
+    }
+}
+
+.nav-item {
+    .nav-link {
+        padding: 8px 10px 8px 10px !important;
+    }
+}
+.heading-right {
+    .btn-shopping {
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: bold;
+        position: relative;
+    }
+    .btn-shopping:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 2px;
+        color: #ffe300 !important;
+        background-color: #ffe300;
+    }
+}
+
+.dropdown {
+    position: relative;
+    .dropdown-menu {
+        position: absolute;
+        z-index: 100;
+        display: none;
+        right: 0;
+        left: auto;
+    }
+}
+.dropdown-user-icon {
+    background-color: #a90019 !important;
+    border-radius: 50% !important;
+}
+
+.dropdown-user-icon:hover {
+    color: #fff !important;
+}
+
+/* * LOGIN VIEW */
+.login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.login-staff {
+    background-color: #6fa6d6;
+    color: #fff;
+    border-radius: 5px;
+}
+.login-banner {
+    position: relative;
+    height: 100vh;
+    background: url('../assets/images/login-view.jpg') no-repeat center center/cover;
+    .container {
+        width: 100%;
+        max-width: 550px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.login-form {
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+/* * REGISTER VIEW */
+
+.register-banner {
+    position: relative;
+    height: 100vh;
+    background: url('../assets/images/register-view.jpg') no-repeat center center/cover;
+    .container {
+        width: 100%;
+        max-width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.register-form {
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.register-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* * CONTAINER */
+
+.search-input {
+    height: 40px;
+    border-radius: 40px 0 0 40px !important;
+}
+.search-button {
+    width: 100px;
+    border-radius: 0 40px 40px 0 !important;
+    height: 38px !important;
+    background-color: #ffe300 !important;
+    height: 40px;
+}
+
+.background {
+    background-color: #f3f5f7;
+    .container {
+        max-width: 1400px;
+        box-shadow:
+            rgba(0, 0, 0, 0.2) 0px 3px 5px -1px,
+            rgba(0, 0, 0, 0.14) 0px 5px 8px 0px,
+            rgba(0, 0, 0, 0.12) 0px 1px 14px 0px;
+        border-radius: 5px;
+    }
+    .card-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card {
+        transition:
+            transform 0.3s ease-in-out,
+            box-shadow 0.3s ease-in-out;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+
+        z-index: 100;
+    }
+    .card:hover > img {
+        transform: scale(1.1);
+    }
+    .card > img {
+        transition: all ease-in-out 0.2s;
+    }
+}
+
+.card-price {
+    font-weight: bold;
+}
+
+.container-find {
+    .find-title {
+        font-family: 'Pacifico', cusive;
+        font-size: 40px;
+        /* font-weight: bold; */
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-decoration-style: solid;
+    }
+    .form-check {
+        font-size: larger;
+    }
+
+    .form-check .form-check-input {
+        transform: scale(1.5);
+    }
+}
+
+.find-club {
+    border-radius: 5px;
+    margin: 2px !important;
+    .text-center {
+        font-size: x-large;
+    }
+}
+
+.find-category {
+    border-radius: 5px;
+    margin: 2px !important;
+    .text-center {
+        font-size: x-large;
+    }
+}
+
+/* * MODAL */
+.modal-content {
+    .modal-header {
+        margin: 7px;
+        border-radius: 10px;
+        background-color: #dc0021;
+        color: #fff;
+        .modal-title {
+            font-weight: bold;
+        }
+    }
+}
+
+.line {
+    height: 3px;
+    width: 100%;
+    background-position-x: -30px;
+    background-size: 116px 3px;
+    background-image: repeating-linear-gradient(
+        45deg,
+        #6fa6d6,
+        #6fa6d6 33px,
+        transparent 0,
+        transparent 41px,
+        #f18d9b 0,
+        #f18d9b 74px,
+        transparent 0,
+        transparent 82px
+    );
+}
+
+.btn-buying {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #dc0021;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-buying:hover {
+    background-color: #a70015; /* Một màu sáng hơn khi di chuột qua */
+}
+
+.head-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+}
+
+.btn-add-product {
+    background-color: #ff6600;
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    padding: 4px 6px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-product:hover {
+    background-color: #e65100; /* Màu nền khi di chuột qua */
+}
